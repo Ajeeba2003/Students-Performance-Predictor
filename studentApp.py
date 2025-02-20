@@ -10,7 +10,7 @@ model=joblib.load('Student_Performance.pkl')
 
 st.title('Student Performance Prediction')
 st.write('This app predicts student performance using data-driven insights for better learning outcomes!')
-Hour_studied=st.number_input('How many hours did the student study per day?',value=0,min_value=0,max_value=24,placeholder=" ")
+Hour_studied=st.number_input('How many hours did the student study per day?',value=0,min_value=0,max_value=24)
 score=st.number_input("Enter the student's past academic scores")
 sleep_hour=st.number_input('How many hours does the student sleep?')
 sample_paper=st.number_input('How many sample question papers has the student practiced?')
